@@ -1,6 +1,6 @@
-pandas 
+streamlit
+pandas
 sqlalchemy
-dotenv 
-openai 
-stream
 psycopg2-binary
+openai
+python-dotenv

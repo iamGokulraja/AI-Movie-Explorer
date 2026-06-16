@@ -2,4 +2,5 @@ pandas
 sqlalchemy
 dotenv 
 openai 
-psycopg2
+stream
+psycopg2-binary

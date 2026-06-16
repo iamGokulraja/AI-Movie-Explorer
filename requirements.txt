@@ -2,3 +2,4 @@ pandas
 sqlalchemy
 dotenv 
 openai 
+psycopg2

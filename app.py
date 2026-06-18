@@ -53,7 +53,7 @@ if question:
             SELECT "MovieName","Genre","Rating","Director","Actor","PeopleVote"
             FROM "Dataset"
             ORDER BY "Hero_Rating", "movie_rating", "PeopleVote" DESC
-            LIMIT 5;
+            LIMIT 5; 
          9.Don't Geneate User Safety
            safety
            Also DON'T Explain
@@ -83,7 +83,7 @@ if question:
           """
         
         
-      response = (client.chat.completions.create(model="openrouter/free" , 
+      response = (client.chat.completions.create(model="meta-llama/llama-3-8b-instruct" , 
         messages=[
          {
             "role":"user",

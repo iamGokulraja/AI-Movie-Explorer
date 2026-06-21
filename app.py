@@ -23,7 +23,7 @@ def answerPrompt(question,result):
 
 st.title("AI Movie Explorer")
 
-db_url = os.getenv("DATABASE_URL")
+db_url = os.getenv("DATABASE_CONN")
 engine = create_engine(db_url)
 question = st.text_input("Ask Movie Question")
 
@@ -93,7 +93,7 @@ if question:
 
 
         
-      st.write(response)
+    #st.write(response)
       sql = (response.choices[0].message.content)
       sql=(sql.replace(" ``` sql","").replace(" ``` ","").strip())
         

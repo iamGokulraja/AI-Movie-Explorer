@@ -23,8 +23,8 @@ def answerPrompt(question,result):
 
 st.title("AI Movie Explorer")
 
-engine = create_engine("postgresql://postgres:Gokul%400508@localhost:5432/Kollywood_Movies_2011-19")
-
+db_url = os.getenv("DATABASE_URL")
+engine = create_engine(db_url)
 question = st.text_input("Ask Movie Question")
 
 if question:
@@ -90,8 +90,10 @@ if question:
             "content":prompt
           }
         ]))
+
+
         
-        
+      st.write(response)
       sql = (response.choices[0].message.content)
       sql=(sql.replace(" ``` sql","").replace(" ``` ","").strip())
         

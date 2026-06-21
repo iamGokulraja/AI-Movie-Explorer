@@ -23,8 +23,7 @@ def answerPrompt(question,result):
 
 st.title("AI Movie Explorer")
 
-db_url = os.getenv("DATABASE_CONN")
-engine = create_engine(db_url)
+engine = st.secrets["DATABASE_URL"]
 question = st.text_input("Ask Movie Question")
 
 if question:

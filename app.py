@@ -19,14 +19,14 @@ def answerPrompt(question,result):
           2.Just Generated the result movies one line plot or story
     """
     return answer
-    
 
 st.title("AI Movie Explorer")
 
-engine = st.secrets["DATABASE_URL"]
+engine = os.getenv("DATABASE_URL")
 question = st.text_input("Ask Movie Question")
 
-if question:
+if st.button("Enter"):
+  if question.strip():
     try:
       load_dotenv()
       apiKey = os.getenv("API_KEY")
@@ -92,7 +92,7 @@ if question:
 
 
         
-    #st.write(response)
+     #st.write(response)
       sql = (response.choices[0].message.content)
       sql=(sql.replace(" ``` sql","").replace(" ``` ","").strip())
         
@@ -119,3 +119,6 @@ if question:
         
     except Exception as e:
       st.error(str(e))
+
+  else:
+    st.error("Please Enter a Question")

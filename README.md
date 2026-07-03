@@ -17,6 +17,7 @@ The application converts user questions into SQL queries, retrieves movie inform
 ## 📂 GitHub Repository
 
 🔗 https://github.com/iamGokulraja/Movie-Explorer
+
 ---
 
 # ✨ Features

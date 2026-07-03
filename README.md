@@ -1,4 +1,4 @@
-# 🎬 AI Movie Explorer
+# 🎬 Movie Explorer
 
 AI Movie Explorer is an AI-powered movie exploration application built using **Streamlit, Python, OpenRouter API, PostgreSQL, and Neon PostgreSQL**.
 
@@ -16,8 +16,7 @@ The application converts user questions into SQL queries, retrieves movie inform
 
 ## 📂 GitHub Repository
 
-🔗 https://github.com/iamGokulraja/AI-Movie-Explorer
-
+🔗 https://github.com/iamGokulraja/Movie-Explorer
 ---
 
 # ✨ Features
